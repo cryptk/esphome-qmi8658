@@ -134,7 +134,6 @@ temperature_schema = sensor.sensor_schema(
 
 
 CONFIG_SCHEMA = cv.All(
-    cv.only_with_arduino,
     cv.Schema(
         {
             cv.GenerateID(): cv.declare_id(QMI8658Component),
